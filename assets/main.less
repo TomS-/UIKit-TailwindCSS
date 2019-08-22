@@ -1,0 +1,67 @@
+@tailwind base;
+
+@tailwind components;
+
+
+/*** START UIKIT ***/
+
+
+// Important
+@import "../node_modules/uikit/src/less/components/variables.less";
+@import "../node_modules/uikit/src/less/components/inverse.less";
+@import "../node_modules/uikit/src/less/components/animation.less";
+
+// Javascript
+@import "../node_modules/uikit/src/less/components/accordion.less";
+@import "../node_modules/uikit/src/less/components/card.less";
+@import "../node_modules/uikit/src/less/components/drop.less";
+@import "../node_modules/uikit/src/less/components/dropdown.less";
+@import "../node_modules/uikit/src/less/components/close.less";
+@import "../node_modules/uikit/src/less/components/modal.less";
+@import "../node_modules/uikit/src/less/components/lightbox.less";
+@import "../node_modules/uikit/src/less/components/slideshow.less";
+@import "../node_modules/uikit/src/less/components/slider.less";
+@import "../node_modules/uikit/src/less/components/sticky.less";
+@import "../node_modules/uikit/src/less/components/offcanvas.less";
+@import "../node_modules/uikit/src/less/components/switcher.less";
+@import "../node_modules/uikit/src/less/components/leader.less";
+@import "../node_modules/uikit/src/less/components/notification.less";
+@import "../node_modules/uikit/src/less/components/tooltip.less";
+
+// Variables
+@breakpoint-small: 640px;
+@breakpoint-medium: 768px;
+@breakpoint-large: 1024px;
+@breakpoint-xlarge: 1280px;
+
+
+/*** END UIKIT ***/
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+header > h1 {
+    grid-column: ~"2 / 3";
+}
+
+.grid-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 450px));
+    grid-gap: 2rem;
+    padding: 0 25px;
+}
+
+.grid-span-2 {
+    grid-row: span 2;
+}
+
+.article-small {
+    display: grid;
+    grid-template-columns: 150px minmax(250px, 1fr);
+    grid-gap: 1rem;
+}
+
+
+@tailwind utilities;

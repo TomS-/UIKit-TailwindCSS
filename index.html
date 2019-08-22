@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="./assets/dist/main.css" rel="stylesheet">
+	</head>
+    <body class="invisible">
+
+        <header class="sticky py-3 border-b bg-white">
+            <h1 class="text-lg font-bold">UIKit + Tailwind Starter</h1>
+        </header>
+
+        <div class="grid-page py-16" uk-scrollspy="target: > *; cls: uk-animation-fade; delay: 200">
+            <h1 class="grid-span-2 text-6xl font-bold leading-none">Useful Information</h1>
+
+            <div class="article grid-span-2">
+                <div uk-slideshow>
+                    <ul class="uk-slideshow-items">
+                        <li>
+                            <img data-src="https://images.unsplash.com/photo-1566274233403-96b243bb03d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" uk-img uk-cover>
+                        </li>
+                        <li>
+                            <img data-src="https://images.unsplash.com/photo-1566264225354-a87aa6083e50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" uk-img uk-cover>
+                        </li>
+                    </ul>
+                </div>
+                <div class="py-4 border-b">
+                    <h2 class="uppercase tracking-wide font-bold">This is a title</h2>
+                    <p class="text-sm text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio harum fuga sit dolorum, beatae esse ipsum incidunt distinctio voluptatem.</p>
+                    <button class="mt-4">Find out more</button>
+                </div>
+            </div>
+
+            <div class="article-small">
+                <img class="h-full object-cover" data-src="https://images.unsplash.com/photo-1566264225354-a87aa6083e50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" uk-img>
+                <div class="py-4 border-b">
+                    <h2 class="uppercase tracking-wide font-bold">This is a title</h2>
+                    <p class="text-sm text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio harum fuga sit dolorum, beatae esse ipsum incidunt distinctio voluptatem.</p>
+                    <button class="mt-4">Find out more</button>
+                </div>
+            </div>
+
+            <div class="article-small">
+                <img class="h-full object-cover" data-src="https://images.unsplash.com/photo-1566264225354-a87aa6083e50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" uk-img>
+                <div class="py-4 border-b">
+                    <h2 class="uppercase tracking-wide font-bold">This is a title</h2>
+                    <p class="text-sm text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio harum fuga sit dolorum, beatae esse ipsum incidunt distinctio voluptatem.</p>
+                    <button class="mt-4">Find out more</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/dist/main.js"></script>
+    </body>
+</html>
